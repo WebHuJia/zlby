@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="inc/meta.inc"-->
+    <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <!--<link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css">-->
+ <style>
+/*conmmon*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+body{font-family:'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei';padding-top:42px;background: #eceef2;min-width: 1240px;max-width: 1920px;margin:0 auto;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0}
+a{color:#fff; text-decoration: none;}
+a,img,input,button{outline: none;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+i,em{font-style: normal;}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.q:after{display:block;content:'';clear: both;}
+.q{*zoom:1;}
+.po{position:absolute;top:0;left:0;right:0;margin: auto;bottom:0;}
+.wrap{position:relative;min-width: 1240px;overflow: hidden;height: 1167px;background: url(ossweb-img/insigebg.jpg) no-repeat 50% 80px;}
+.wrap_box{width:1240px;margin:40px auto;}
+.wrap_box h3{font-size:32px;font-weight: bold;color:#000;overflow:hidden;}
+.wrap_box h3 strong{font-size:15px;color:#c4a85b;line-height: 100%;float:left;margin:10px 0 0 10px;font-weight: normal;}
+.wrap_box h3 span{float:left;}
+.wrap_box h3 i{font-size:12px;color:#545454;line-height: 100%;display: block;}
+/* 导航条 */
+.wrap_ied a {color: #898989;}
+/* 导航条 */
+#header h1 {width:1240px; margin:0 auto; position: relative; z-index: 2;height:80px;}
+#header h1 a {display:block; width:150px; height: 82px; overflow: hidden; position: relative;}
+#header h2{height:80px;background:#171112; background: #fff url(//game.gtimg.cn/images/3new/web20180301/navbg.jpg) no-repeat 0 0;; position: absolute; left:0; top:0; width: 100%; text-indent: -9999px; z-index: 1;}
+#nav {height:80px; margin-top:-80px;}
+#nav ul {width:926px; margin: 0 auto; position: relative;z-index: 999;}
+#nav li {width:120px; float:left;}
+#nav li a{width:100px; height:82px; display: block; padding:20px 0 2px; margin:0 auto; color:#000; font-size:16px; text-align: center; line-height: 34px;box-sizing: border-box;position:relative;z-index: 4;}
+#nav li a:after{position:absolute;bottom:0;left:0;width: 100%;height:4px;background: #c4a85b;content:'';display:none;}
+#nav li.on a:after{display: block;}
+#nav li.on a{color:#c4a85b}
+/* #nav li.on li a:after{display: none} */
+#nav li li{position:relative;}
+#nav li a:hover:after,#nav li:hover a:after{display:block;}
+#nav li a:hover li a:after,#nav li:hover li a:after{display:none;}
+#nav li li:hover a:after{display:block;content: '';width:4px;height:14px;position:absolute;background:#c4a85b;top:16px;}
+#nav li em{font-style: normal; color:#595554; font-size:10px;text-transform:uppercase;font-family:Tahoma; display:block;}
+#nav li ul {width:100%; margin:-2px auto 0; background:#fff;background:rgba(255,255,255,0.8);;overflow: hidden;height:0;}
+#nav li li {width:100%; float:none;height:inherit;;}
+#nav li li a {padding:0; height: auto; line-height: 46px; font-size:14px;border:none;position:relative;border-bottom:1px solid #ccc;}
+#nav li.on li a{color:#000;}
+#nav li:hover ul{height:inherit;}
+#nav #tg-sns:hover{cursor: default}
+#nav #tg-sns{width:190px;position:absolute;top:20px;right:-150px;;}
+#nav #tg-sns a{margin-right: 10px;}
+#nav #tg-sns:hover a{color:#000;}
+#nav #tg-sns:hover a:after{display:none;}
+#nav #tg-sns a:hover:after{display:none;}
+#nav #tg-sns a{background:url(//game.gtimg.cn/images/3new/web20180301/spr.png) no-repeat 0 0;width:40px;height:40px;border:1px solid #d4d4d4;border-radius:4px;box-sizing: border-box;}
+#nav #tg-sns a.tg-sns-qq{background-position:5px -290px;}
+#nav #tg-sns a.tg-sns-wechat{background-position:3px -225px;}
+#nav #tg-sns a.tg-sns-sina{background-position:3px -258px;}
+#nav #tg-sns a.tg-sns-buluo{background-position:3px -193px;margin:0;}
+.tg-sns{float:right;}
+.hide{display: none;}
+.spr { background-image: url(ossweb-img/spr.png); background-repeat: no-repeat; }
+/* content */
+.content {width: 1200px;margin: -1060px auto 0;overflow: hidden;position: relative;}
+.content .go-index {width: 155px;height: 46px;display: block;position: absolute;top: 25px;right: 50px;text-indent: -9999px;background-position: -1438px -328px;}
+.download-wrap {width: 468px;height: 209px;margin: 699px 0 0 0;position: relative;overflow: hidden;background-position: -950px -204px;}
+.download-wrap .special {width: 186px;height: 187px;position: absolute;top: 10px;left: 10px;}
+.download-wrap .ios,.download-wrap .android,.download-wrap .mn{box-sizing: border-box;width: 234px;height: 50px;border: 1px solid #fff3ce; margin: 10px 0 18px 224px;}
+.download-wrap .ios{background: #a18b4e;}
+.download-wrap .android{background: rgba(160, 135, 66, 0.6);}
+.download-wrap .mn{background: rgba(76, 82, 103, 0.851);}
+.download-wrap a{position: relative; display: block;width: 100%;height: 100%;text-align: center;line-height: 50px;font-size: 18px;}
+.ios span,.android span,.mn span { width: 24px; height: 31px; margin-top: -12px; text-indent: -9999px; background-position: -1660px -328px;}
+.android span{background-position: -1613px -328px;width: 27px; height: 31px;}
+.mn span{background-position: -1704px -328px;width: 26px; height: 25px;left: 42px!important;top: 50%!important;}
+.download-wrap li span {display: block;position: absolute;top: 40%;left: 60px;}
+.download-wrap li strong{margin-left: 40px;}
+.loding{position: absolute;max-width: 657px;height: auto;right: 0;bottom:46px;text-align: center;}
+.loding p{font-size: 18px;color: #fff;margin-bottom: 20px;}
+.loding p em,.loding p a{color: #d8ab2e;}
+.loding .btn{width: 100%;height: auto;text-align:center;}
+.loding .btn a{display: inline-block; width: 326px; height: 104px;background-position: -950px -568px;font-size: 38px;font-weight: bold;line-height: 80px;}
+.loding .btn a.t{background-position:-1438px -204px;}
+.container{height: 3056px;background: url(ossweb-img/insigebgs.jpg) no-repeat center 152px;overflow: hidden;}
+.container h4{display: block;width: 651px; height: 48px;background-position:-950px -433px;text-indent: -9999px;margin: 0 auto;margin-top: 156px;}
+.container .yxts{background-position:-949px -501px;margin-top: 60px;}
+.comat{width: 920px;height: auto;overflow: hidden;margin: 60px auto 0;}
+.comat .title{padding-top: 1px; width: 840px;height: 191px;background-position: -950px -10px;position: relative;z-index: 2;margin: 0 auto;}
+.comat .title-t{background-position:-9px -260px;}
+.comat .title-three{background-position:-9px -694px;}
+.comat .title-four{background-position:-9px -483px;}
+.comat strong{display:block;font-weight: bold;font-size: 30px;color: #fff;text-align: center;margin-top: 88px;}
+.comat .title-t strong{margin-top: 97px;}
+.comat .title-four strong{margin-top: 106px;}
+.comat strong em{color: #d8ab2e;font-weight: bold;}
+.comat span{display: block;font-size: 16px;color: #d8ab2e;text-align: center;}
+.comat .list{width: 100%;height:230px;background-position:-10px -10px;position: relative;z-index: 1;top:-27px;text-align: center;}
+.comat .list-t{margin-top: 10px;}
+.comat .list-three{margin-top: 11px;}
+.comat .list-four{margin-top: 17px;}
+.comat .list li{display: inline-block;width: 128px;height: 128px;text-align: center;border: 1px solid #394264; margin: 35px 16px 0 11px;background:#cfd3da;font-size: 14px;color: #46464a;}
+.comat .list li img{display: block;margin: 15px auto 20px;}
+.container .two{margin-top: 0;}
+/*游戏特色轮播图*/
+.exhibition_hall {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.exhibition_hall h4 {
+    font-size: 30px;
+    font-family: "寰?蒋闆呴粦";
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 50px;
+    color: #000;
+}
+
+.tline {
+    color: #dedede;
+}
+
+.roundabout_box {
+    width: 980px;
+    height: 480px;
+}
+
+.roundabout_box ul {}
+
+.roundabout_box img {
+    width: 100%;
+}
+
+/**********roundabout**********/
+
+.roundabout_box {
+    height: 426px;
+    width: 980px;
+    margin: 40px auto 20px auto;
+}
+
+.roundabout-holder {
+    list-style: none;
+    width: 800px;
+    height: 426px;
+    margin: 0px auto;
+}
+
+.roundabout-moveable-item {
+    font-size: 12px !important;
+    height: 426px;
+    width: 300px;
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.roundabout-moveable-item img {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.roundabout-in-focus {
+    cursor: auto;
+    border-left: 1px #fff solid;
+    border-right: 1px #fff solid;
+}
+
+.roundabout-in-focus000:hover {
+    -webkit-box-shadow: 0px 0px 20px #787878;
+    -moz-box-shadow: 0px 0px 20px #787878;
+    background: #f9f9f9;
+}
+
+.roundabout-holder .text {
+    color: #999;
+}
+
+.roundabout-in-focus000:hover span {
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 8px 20px;
+    background: #f9f9f9;
+    color: #3366cc;
+    z-index: 999;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topLeft: 5px;
+    border-left: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+}
+
+.roundabout a:active,
+.roundabout a:focus,
+.roundabout a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+.roundabout li {
+    margin: 0
+}
+.switcher{
+    text-align: center;
+    width:100%;
+}
+.switcher a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+    opacity: 1;
+    background: url(//game.gtimg.cn/images/3new/cp/a20180301ydy/spr.png) -1307px -166px no-repeat;
+    margin:0 5px;
+}
+
+.switcher .active {
+    background: url(//game.gtimg.cn/images/3new/cp/a20180301ydy/spr.png) -1289px -166px no-repeat;
+}
+/* 二维码 */
+.sprs{background: url(//game.gtimg.cn/images/3new/web20180301/spr.png) no-repeat 0 0;}
+.motto{background:url(//game.gtimg.cn/images/3new/web20180301/win.png) no-repeat center;height:82px;text-indent: -9999px;margin-bottom:70px;}
+.qr_box{margin:100px auto 0;height:198px;text-align: center;padding-bottom:150px;}
+.qr_box .qr_zc p i{width: 54px;height:154px;background-position: -155px -359px;box-sizing: border-box;;display: block;position:absolute;top:0;left:0;z-index: 0;}
+.qr_box .qr_zc span{position:relative;z-index: 123;width: 1em;display: block;color:#fff;top:30px;line-height: 100%;}
+.qr_box li{width:250px;height:195px;display:inline-block;border:1px solid #2c324a;margin:0 10px;vertical-align: top;position:relative;}
+.qr_box p{border-left:1px solid #2c324a;width:53px;height:100%;float:right;position:relative;}
+.qr_box img{left:-50px;}
+.qr_box .wb_kf{border:none;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAADDCAMAAAAbWtcpAAAArlBMVEUAAAAxOFQsMkosMkosMko5QmQ5QmQsMkosMko5QmQvN1I5QmQvNlIsMkowN1MwN1M5QmQsMkosMkosMko5QmQsMko5QmQsMko5QmQyOlcvNlEsMko5QmQsMko5QmQwN1M5QmQ5QmQsMko5QmQsMkosMko5QmQsMkrEqFuKfl89RWRgX2GwmlzApVtNUGN0bWCbil5ESmNoZWGfjV1XV2J7cmCDeF+ok125oFw0PFkGcNzbAAAAJnRSTlMADuBEm0fjluidCJgywCge96+JWOvW03NxGBTNtWVXPMGno4l8Syaj33YAAAHJSURBVGje7dPZUsJAEIXhk6gQI4sEFGVVVtlRXOD9X0wYol3WXDTDxLvTt9R8/FWdxkjm/WOzeHGexXq1/CUMJzOdfX65WPPJbDqSEU7m9W0yd8uyOZvcOmQpnJnlar3Vs3TO3o6epXP2dhYbyXLj7O1IlicnQ44cOXLkyJEjR44cOXLkyJEjR44cOXLkyJEjR47cydwuS22H8VUuK6zWGWOM4CYbrfWIAwdkEXj7AKRcBoH3JRy5APAP7Memas+FF/ANzF0ZohDuuYvw0jPw+fh+EFXNZvNegbcd87hULP5s1ifwqWxetqM6ZLOXEuj+eQCNSrME4c4NvC+kj5MYwv0NvD5ZuzFInJiXwp0XWEs/j7tKAIuzA/UTPUw9qgI2lwbmJfCUHZSLxTIszilQThTVaABYnHNgP/3vuwIUDnpgrmt+74b5GAqnBcqJJtEQUDg9sJaeaLPyCIXTA+VE24DCKYHWiTpwdqCc6DBKAIXTAuVE82EXCqcHyon2AmicHthqyImqnB4oJ+rDSaA50Trgx0lg0JMTVTg10KgxPDkJTKI96ctJYKUBF04fcuTIkSNHjhw5cuTIkSNHjhw5cuTIkftPLtP5BhajENdycIGjAAAAAElFTkSuQmCC) no-repeat 0 0;width:78px;height:195px;}
+.qr_box .wb_kf p{width: 100%;box-sizing:border-box;height:104px;;}
+.qr_box .wb_kf .wb{height:78px;margin-bottom:16px;position: relative;}
+.wb_kf .wb a{display: block;width: 100%;height:100%;}
+.wb em{width: 1em;display: block;margin:20px auto;line-height: 1.4;}
+.wb b{font-size:50px;color:#394264;font-family: '宋体';position:absolute;top:12px;right:-4px;}
+p.wb{border:none!important;}
+.wb i{background-position: -212px -357px;width:54px;height:43px;display:inline-block;margin:8px 0 0 2px;}
+.qr_box .wb_kf .kf{height:104px;}
+.wb_kf .kf i{display:block;height:73px;width: 100%;border-top:1px solid #2c324a;font-size:22px;color:#2c324a;line-height: 73px;text-align: center;margin-top:30px;}
+.wb_kf .kf em{width: 103px;height:37px;background-position: -152px -317px;text-decoration: none;display:block;position:absolute;top:4px;left:0;font-style: normal;;text-align:left;line-height:35px;color:#fff;text-indent: .5em;left:-2px;}
+/*弹窗*/
+/*登录*/
+.pop-up{width: 670px;max-height:880px;padding-top: 30px;background: url(ossweb-img/pop-upbg.png) no-repeat;position: relative;}
+.pop-up:after{display: block;content: "";background: url(ossweb-img/spr.png) no-repeat 50% bottom;background-position: -877px -879px;width:670px;height:10px;position: absolute;bottom: 0;}
+.close2{position: absolute;right: -60px;top: 0;width: 60px;height: 44px;display: block;cursor: pointer;text-align: center;background-position: -1662px -467px;}
+h5{font-size: 26px;color: #fff;font-weight: bold;text-align: center;}
+.loginpop ul{margin:75px auto 50px;width: 340px;}
+.loginpop ul li{float: left;text-align: center;cursor: pointer;}
+.loginpop ul li .spn{background: url(ossweb-img/spr.png) -899px -696px no-repeat;display: block;width: 109px;height: 109px;margin-bottom: 12px;}
+.loginpop ul li a{font-size: 20px;color: #fff;}
+.loginpop ul .wx{float: right;}
+.loginpop ul .wx span{background: url(ossweb-img/spr.png) -1062px -700px no-repeat;}
+.opt{font-size: 22px;color: #fff;margin: 67px auto 40px;text-align: center;}
+.opt .row{width: 100%;margin-bottom: 20px;}
+.opt .row p{display: block;text-indent: 153px;font-size: 15px;color: #fff;position: relative;top: 7px;}
+.opt span{display: inline-block;width: 150px;height: 40px;line-height: 40px;text-align: right;}
+.opt select,.opt input{display: inline-block;width: 312px;height: 40px;box-sizing: border-box;border: 1px solid #7286cc;background: #6073b3;color: #fff;font-size: 22px;}
+.loginpop .btn,.loginpop .ljrz{display: block;width:230px;height: 64px;background-position: -1295px -586px;margin: 0 auto 30px;text-align: center;line-height: 64px;font-size: 22px;color: #fff;}
+.loginpop .ljrz{margin-bottom: 85px;}
+.opt p{font-size: 22px;color: #fff;}
+.opt p.fb{margin-bottom: 10px;}
+.opt p em,.opt p .fred,.opt p .id{color: #ead791;}
+.row_btn{height: 64px;text-align: center;margin: 40px auto;}
+.row_btn a{display: inline-block;width:230px;height:64px;text-align: center;line-height: 64px;font-size: 22px;color: #fff;background-position: -1295px -586px;}
+.row_btn a:nth-child(2){ margin-left: 25px;background-position: -1559px -584px;}
+.loginpop .fzlj{width: 160px;height:50px;box-sizing: border-box;background: #a59363;border: 1px solid #373737;line-height: 50px; margin-top: 25px;}
+.opt .input{font-size: 14px;color: #b0b8d9;width: 328px;border: none;background: transparent;margin-left: 20px;}
+.opt .share em{color: #fff;font-size: 20px;margin-left: 20px;}
+.opt img{margin: 35px auto 60px;}
+.matter{width: 594px;height: 458px;margin: 26px auto 0;position: relative;}
+/*滚动条*/
+.matter ul.scroll{height:92%;overflow-y:scroll;width: 96%;font-size: 20px;color: #fff;}
+ul.scroll::-webkit-scrollbar {  width:10px;  }
+ul.scroll::-webkit-scrollbar-thumb{   background-color:#ead791;}
+ul.scroll::-webkit-scrollbar-track-piece{   background:#e4e6ed; }
+.p_row p{width: 88%;text-align:left;margin-right: 20px;line-height: 1.5;}
+    /* 底部 */
+#afooter{background:#000;text-align: center;padding:30px 0;}
+#afooter a,#afooter p{color:#acacac;line-height: 1.5;font-size:16px;}
+#afooter a,#afooter span{ margin:0 5px;}
+ </style>
+</head>
+<body>
+<!--#include virtual="inc/head.inc" -->
+<div class="content">
+    <a onclick="PTTSendClick('header','enter','进入官网2');" target="_blank" class="go-index spr" href="//3.qq.com/main.html">进入官网</a>
+    <h3 class="hide">博弈天下 谁为真龙</h3>
+    <ul class="download-wrap spr">
+        <li class="special" id="qcImg">
+            <img src="ossweb-img/coder.jpg" width="186" height="187" alt="">
+            <!--<img src="../ossweb-img/coder.jpg" width="186" height="187" alt="下载">-->
+        </li>
+        <li class="ios">
+            <a href="//3.qq.com/zlkdatasys/mct/d/?device=iphone" id="iosBtn" target="_blank" onclick="PTTSendClick('download','iosbtn','ios');">
+                <span class="spr">ios</span>
+                <strong>IOS下载</strong>
+            </a>
+        </li>
+        <li class="android">
+            <a href="//3.qq.com/zlkdatasys/mct/d/?device=android" id="apkBtn" target="_blank" onclick="PTTSendClick('download','androidbtn','android');">
+                <span class="spr">Android</span>
+                <strong>安卓下载</strong>
+            </a>
+        </li>
+        <li class="android mn">
+            <a href="//dlied6.qq.com/invc/xfspeed/qqpcmgr/download/GameDownload_zlby_100077.exe" target="_blank" onclick="PTTSendClick('download','pcbtn','pc');">
+                <span class="spr">pc</span>
+                <strong>PC模拟器下载</strong>
+            </a>
+        </li>
+    </ul>
+    <div class="loding">
+        <p>您好，请<a href="javascript:showDia('loginpop_1');" onclick="PTTSendClick('btn','unlogin','登录');">[登录]</a></p>
+        <p style="display:none;">您好! <em>(619718328)</em>，快进入游戏 <a onclick="PTTSendClick('btn','cjjt','创建军团')" href="javascript:;">创建军团</a>吧！<a onclick="PTTSendClick('btn','unlogin','注销');" href="javascript:;">[注销]</a></p>
+        <div class="btn">
+            <a onclick="PTTSendClick('btn','ljrz','立即入驻');" class="spr f" href="javascript:showDia('loginpop_5');">立即入驻</a>
+            <a onclick="PTTSendClick('btn','ckgz','查看规则');" class="spr t" href="javascript:showDia('loginpop_7');">查看规则</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h4 class="spr">入驻奖励</h4>
+    <div class="comat">
+        <div class="title spr">
+            <strong>军团达到<em>5000万</em>总战斗力</strong>
+            <span>(军团奖励)[一]</span>
+        </div>
+        <ul class="list spr">
+            <li><img src="ossweb-img/spoil1.png" width="100" height="100" alt="">如意资源包2级 x2</li>
+            <li><img src="ossweb-img/spoil2.png" width="100" height="100" alt="">8小时免战令 x1</li>
+            <li><img src="ossweb-img/spoil3.png" width="100" height="100" alt="">1小时训练加速 x5</li>
+            <li><img src="ossweb-img/spoil4.png" width="100" height="100" alt="">1小时科技加速 x5</li>
+            <li><img src="ossweb-img/spoil5.png" width="100" height="100" alt="">聚义令 x10</li>
+        </ul>
+    </div>
+    <div class="comat two">
+        <div class="title spr title-t">
+            <strong>军团达到<em>1亿</em>总战斗力</strong>
+            <span>(军团奖励)[二]</span>
+        </div>
+        <ul class="list spr list-t">
+            <li><img src="ossweb-img/spoil1.png" width="100" height="100" alt="">如意资源包3级 x1</li>
+            <li><img src="ossweb-img/spoil6.png" width="100" height="100" alt="">1000行动力 x10</li>
+            <li><img src="ossweb-img/spoil3.png" width="100" height="100" alt="">1小时训练加速 x8</li>
+            <li><img src="ossweb-img/spoil4.png" width="100" height="100" alt="">1小时科技加速 x8</li>
+            <li><img src="ossweb-img/spoil5.png" width="100" height="100" alt="">聚义令 x10</li>
+        </ul>
+    </div>
+    <div class="comat two">
+        <div class="title spr title-t title-three">
+            <strong>军团达到<em>2亿</em>总战斗力</strong>
+            <span>(军团奖励)[三]</span>
+        </div>
+        <ul class="list spr list-three">
+            <li><img src="ossweb-img/spoil1.png" width="100" height="100" alt="">如意资源包3级 x2</li>
+            <li><img src="ossweb-img/spoil8.png" width="100" height="100" alt="">高级迁城令 x1</li>
+            <li><img src="ossweb-img/spoil3.png" width="100" height="100" alt="">1小时训练加速 x15</li>
+            <li><img src="ossweb-img/spoil4.png" width="100" height="100" alt="">1小时科技加速 x15</li>
+            <li><img src="ossweb-img/spoil9.png" width="100" height="100" alt="">如意名将碎片包x10</li>
+        </ul>
+    </div>
+    <div class="comat two">
+        <div class="title spr title-four title-four">
+            <strong>军团达到<em>3亿</em>总战斗力</strong>
+            <span>(军团奖励)[四]</span>
+        </div>
+        <ul class="list spr list-four">
+            <li><img src="ossweb-img/spoil1.png" width="100" height="100" alt="">如意资源包4级 x1</li>
+            <li><img src="ossweb-img/spoil8.png" width="100" height="100" alt="">高级迁城令 x4</li>
+            <li><img src="ossweb-img/spoil3.png" width="100" height="100" alt="">1小时训练加速 x24</li>
+            <li><img src="ossweb-img/spoil4.png" width="100" height="100" alt="">1小时科技加速 x24</li>
+            <li><img src="ossweb-img/spoil10.png" width="100" height="100" alt="">如意神将碎片包 x10</li>
+        </ul>
+    </div>
+    <h4 class="spr yxts">游戏特色</h4>
+    <div class="in exhibition_hall">
+        <div id="" class="roundabout_box">
+            <ul>
+                <li>
+                    <img src="ossweb-img/img1.jpg" width="300" height="426" alt="轮播一">
+                </li>
+                <li>
+                    <img src="ossweb-img/img2.jpg" width="300" height="426" alt="轮播二">
+                </li>
+                <li>
+                    <img src="ossweb-img/img3.jpg" width="300" height="426" alt="轮播二">
+                </li>
+                <li>
+                    <img src="ossweb-img/img4.jpg" width="300" height="426" alt="轮播四">
+                </li>
+                <li>
+                    <img src="ossweb-img/img5.jpg" width="300" height="426" alt="轮播五">
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="switcher jQ_sliderSwitch ">
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+    <ul class='qr_box wrap_box q'>
+        <li class='qr_zc'>
+            <img class='po' src='//game.gtimg.cn/images/3new/web20180301/qr/wx_qr.jpg' alt='微信二维码' />
+            <p class=''>
+                <i class='sprs'></i>
+                <span class='po'>微信公众号</span>
+            </p>
+        </li>
+        <li class='qr_zc'>
+            <img class='po' src='//game.gtimg.cn/images/3new/web20180301/qr/bl_qr.jpg' alt='手Q部落' />
+            <p class=''>
+                <i class='sprs'></i>
+                <span class='po'>手Q部落</span>
+            </p>
+        </li>
+        <li class='qr_zc'>
+            <img class='po' src='//game.gtimg.cn/images/3new/web20180301/cz.jpg' alt='游戏充值二维码' />
+            <p class=''>
+                <i class='sprs'></i>
+                <span class='po'>游戏充值</span>
+            </p>
+        </li>
+        <li class='qr_zc'>
+            <img class='po' src='//game.gtimg.cn/images/3new/web20180301/kf_qr.jpg' alt='游戏客服二维码' />
+            <p class=''>
+                <i class='sprs'></i>
+                <span class='po'>腾讯客服</span>
+            </p>
+        </li>
+        <li class='wb_kf'>
+            <p class='wb'>
+                <a onclick="PTTSendClick('link','weibo','新浪微博');" target='_blank' href="//weibo.com/u/6221374881?topnav=1&wvr=6&topsug=1&is_hot=1">
+                    <em>新浪微博</em>
+                    <i class='sprs'></i>
+                </a>
+            </p>
+            <!-- <p class='kf'>
+              <em class='spr'>客服热线</em>
+              <i>0755-83765566</i>
+            </p> -->
+        </li>
+    </ul>
+</div>
+<!--弹窗-->
+<!-- 登录 -->
+<div id="loginpop_1" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>请选择您要登陆的平台</h5>
+    <ul class="q">
+        <li class="qq"><span class="spn"></span><a href="javascript:;" onclick="PTTSendClick('loginpop','qq','QQ登录');">QQ登录</a></li>
+        <li class="wx"><span class="spn"></span><a href="javascript:;" onclick="PTTSendClick('loginpop','wx','微信登录');">微信登录</a></li>
+    </ul>
+</div>
+<!--主公,请选择登陆方式-->
+<div id="loginpop_2" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>主公,请选择登陆方式</h5>
+    <div class="opt">
+        <div class="row">
+            <span>请选择渠道：</span>
+            <select>
+                <option value="ios">ios</option>
+                <option value="安卓">安卓</option>
+            </select>
+        </div>
+        <div class="row">
+            <span>请选择大区：</span>
+            <select>
+                <option value="一区">一区</option>
+                <option value="二区">二区</option>
+            </select>
+            <p class="ts">本次活动仅限在列表内的服务器开放</p>
+        </div>
+        <div class="row">
+            <span>角色名字：</span>
+            <input type="text" readonly="readonly" />
+        </div>
+    </div>
+    <a onclick="PTTSendClick('btn','queding','确定');" href="javascript:;" class="btn spr">确&nbsp;&nbsp;&nbsp;&nbsp;定</a>
+</div>
+<!--入驻成功-->
+<div id="loginpop_3" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>入驻成功</h5>
+    <div class="opt">
+        <p class="fb">恭喜主公,<em>入驻成功</em>!</p>
+        <p>奖励将通过邮件方式发送到游戏邮箱中！</p>
+        <div class="row_btn">
+            <a onclick="PTTSendClick('btn','jryx','进入游戏');" href="javascript:;" class="spr jryx">进入游戏</a>
+            <a onclick="PTTSendClick('btn','share','分享好友');" href="javascript:showDia('fixe_dimg_6');" class="spr share">分享好友</a>
+        </div>
+    </div>
+</div>
+<!--入驻失败-->
+<div id="loginpop_4" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>入驻失败</h5>
+    <div class="opt">
+        <p class="fb">抱歉,主公！</p>
+        <p>你还没有在游戏中<em>创建一个军团</em>!</p>
+        <div class="row_btn">
+            <a onclick="PTTSendClick('link','jryx','进入游戏');" href="javascript:;" class="spr jryx">进入游戏</a>
+            <a onclick="PTTSendClick('btn','guiz','查看规则');" href="javascript:showDia('loginpop_7');" class="spr share">查看规则</a>
+        </div>
+    </div>
+</div>
+<!--加入军团-->
+<div id="loginpop_5" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>加入军团</h5>
+    <div class="opt">
+        <p class="fb">是否确认加入好友<i class="fred">(好友名字)</i></p>
+        <p>所在的<em>(服务器)</em>的军团:<i class="id">军团名字</i>!</p>
+        <div class="row_btn">
+            <a onclick="PTTSendClick('btn','dowload','下载并加入');" href="javascript:showDia('loginpop_2');" class="spr jryx">下载并加入</a>
+            <a onclick="PTTSendClick('btn','quxiao','取消');" href="javascript:;" class="spr share">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<!--分享好友-->
+<div id="loginpop_6" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>分享好友</h5>
+    <div class="opt">
+        <label for="web">分享方式一 :<input class="input" type="text" id="web" value="http://3.qq.com/cp/a20171130yuyue/index.html" readonly="readonly"></label>
+        <a href="javascript:jsCopy('web');" class="lj btn fzlj" onclick="PTTSendClick('btn','fuz','复制链接');">复制链接</a>
+    </div>
+    <div class="opt">
+        <p class="share">分享方式二:<em>扫一扫二维码分享页面邀请好友</em></p>
+        <img src="ossweb-img/tc_coder.jpg" width="223" height="223" alt="">
+    </div>
+</div>
+<!--活动规则-->
+<div id="loginpop_7" class="loginpop hide pop-up">
+    <span class="close2 spr"></span>
+    <h5>活动规则</h5>
+    <div class='matter'>
+        <ul class="scroll">
+            <li class="p_row q"><span class="fl">一、</span><p class="fr">本次活动仅在部分指定的服务器内开放，具体服务器可在活动页面点击“立即入驻”后，在绑定角色信息弹窗中的“请选择大区”一栏下拉查看；</p></li>
+            <li class="p_row q"><span class="fl">二、</span><p class="fr">活动期间指定服务器的军团长可在军团入驻页面报名入驻，报名日期4月23日-5月22日；</p></li>
+            <li class="p_row q"><span class="fl">三、</span><p class="fr">报名入驻的军团会在报名后在游戏中的军团界面、军团列表界面获得特殊标记，标记名为“已入驻”</li>
+            <li class="p_row q"><span class="fl">四、</span><p class="fr">报名入驻的军团会在活动最后一日（5月23日24点）进行战力考核。如果军团的总战力达到指定要求，则军团的每个军团成员会获得入驻奖励；</li>
+            <li class="p_row q"><span class="fl">五、</span><p class="fr">军团入驻奖励是发放达到军团战力要求的最高档奖励；</li>
+            <li class="p_row q"><span class="fl">六、</span><p class="fr">可获得奖励的军团成员以5月23日24点军团内的成员为准；</li>
+            <li class="p_row q"><span class="fl">七、</span><p class="fr">入驻奖励将在活动结束后的三日内（5月24日-5月26日），通过游戏内邮件进行发放。</li>
+        </ul>
+    </div>
+    <a onclick="PTTSendClick('btn','ljrz','立即入驻');" href="javascript:;" class="spr ljrz">立即入驻</a>
+</div>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//3.qq.com/cp/a20180301ydy/jquery.roundabout.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script  src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="js/share.js"></script>
+<script>
+    TGshare({
+        iconSize : 16, //分享图标的大小,16为16px X 16px，24为24px X 24px
+        snsModule : ['wechat','qq','sina','buluo'],
+        //分享类型 wechat,qq,qzone,weibo,pengyou,sina,douban,kaixin,renren
+        //默认全部加载
+        title :'2018年度策略大作火爆预约',
+        //需要自定义标题时才用到，默认拉取页面标题
+        url : location.href,
+        //需要自定义页面url时才用到，默认拉取页面url
+        snsID :'tg-sns',//自定义SNS容器ID
+        isWindow : true, //分享打开类型，true为弹窗打开，false为新页面打开，默认为弹窗打开
+        tcss : true //是否添加点击流，true为添加，false为不添加，默认添加
+    })
+
+    function jsCopy(id){
+        var e=document.getElementById(id);//对象是copy-num1
+        e.select(); //选择对象
+        var b=document.execCommand("Copy"); //执行浏览器复制命令
+        if(b){
+            alert("复制成功");
+        }
+    }
+    function showDia(div){
+        showDialog.show({
+            id:div, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+            bgcolor:"#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+            opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    }
+    //    关闭弹窗
+    $('.close2').click(function () {
+        showDialog.hide()
+    })
+
+</script>
+
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20180412jtrz" , //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+    $('.roundabout_box ul').roundabout({
+        duration: 600, // 运动速度
+        btnPrev: ".ban_r_btn", // 右按钮
+        btnNext: ".ban_l_btn", // 左按钮
+        autoplay: true,        // 自动播放
+        autoplayDuration: 1500,// 自动播放的时间
+        minOpacity: 0,         //最小的透明度
+        maxOpacity: 1,         //最大的透明度
+        reflect: true,         // 为true时是从左向右移动，为false从右向左移动
+        startingChild: 1,      // 默认的显示第几张图片
+        autoplayInitialDelay: 5000, // 从第几秒时，开始自动播放（默认毫秒）开始的第一次管用
+        autoplayPauseOnHover: true, // 鼠标移入元素内是否自动播放，为true不播放，false还自动播放
+        enableDrag: true       // 在移动端可以拖拽播放
+    }).bind({
+        animationEnd: function (e) {
+            var index = $('.roundabout_box ul').roundabout('getChildInFocus');
+            $('.jQ_sliderSwitch a').removeClass('active');
+            $('.jQ_sliderSwitch a').eq(index).addClass('active');
+        }
+    });;
+
+    $('.jQ_sliderSwitch a').on('click', function () {
+        var $elem = $(this);
+        var index = $elem.index();
+        $('.roundabout_box ul').roundabout('animateToChild', index);
+        return false;
+    });
+
+</script>
+</body>
+</html>
