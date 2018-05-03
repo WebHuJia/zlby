@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="inc/meta.inc" -->
+    <title>这三国你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/swiper-3.4.2.min.css">
+    <!-- 设计：微聚cp  | 重构：微聚cp | 创建：2018/02/23 -->
+    <style>
+        body{background-color: #fff;}
+        .title{ width: 100%;font-size:.36rem;text-align: center;margin-top: 1rem;margin:1.42rem 0 .42rem 0;}
+        .tit{margin-right:2.8rem;font-weight: bold;}
+        .back{display: inline-block;width:1.35rem;height:.25rem;font-size: .22rem;color: #000000;background-position:-6rem -1.4rem;  margin: .15rem 0 0 .5rem;text-align: right;}
+        .raiders_nav{width: 100%;height: 1.2rem; margin: .27rem 0 .21rem 0;border-top: .01rem solid #e5e5e5;border-bottom:  .01rem solid #e5e5e5;text-align: center;}
+        .raiders_nav li{border-top: .05rem solid transparent; font-size: .32rem;text-align: center;height: 1.2rem;line-height: 1.2rem;width: .9rem;display: inline-block; position: relative;top:-.32rem;margin: 0 .2rem;}
+        .raiders_nav li:after{display: block;content: "/";position: absolute;top: 0;right: -.5rem;color: #dddddd;font-size: .18rem;}
+        .raiders_nav li.last:after{content: "";}
+        .raiders_nav li a{font-size: .32rem;color: #000;}
+        .raiders_nav li.active{border-top: .05rem solid #c4a85b;}
+        .raiders_nav li.active a{color: #c4a85b;font-weight: bold;display: block;width:100%;height: 100%;}
+        .arm{width: 7.1rem;height: auto;margin: .25rem auto 0}
+        .arm li{width:7.1rem;height:1.7rem;background: url(ossweb-img/1.jpg) no-repeat 50%/7.1rem 1.7rem;margin-bottom: .07rem;position: relative;}
+        .arm li img{display: inline-block;width: 2.6rem;height: 1.7rem;position: absolute;left: .3rem;}
+        .arm li span{font-size: .32rem;color: #fff;font-weight: bold;;position: absolute;bottom: .7rem;right: 2rem;width: 1.35rem;height: .42rem;text-align: right;}
+        .arm li strong{ font-size: 1.2rem;color: #74788b;position: absolute;bottom: .1rem;font-weight: bold;right: 1rem;}
+        .arm li a{display: inline-block;width: .45rem;height: .45rem;background: url(ossweb-img/sign.png) no-repeat 50%/.45rem .45rem;position: absolute;bottom: .65rem;right: .5rem;}
+        .arm .even{background:url(ossweb-img/2.jpg) no-repeat 50%/7.1rem 1.7rem;}
+        .arm .even img{left: 3rem;}
+        .arm .even strong{left: .5rem;}
+        .arm .even span{right: 4.3rem;text-align: left;}
+        .soliders{margin-bottom: .5rem;}
+        .soliders ul{display: none;}
+        .soliders ul:first-child{display: block;}
+    </style>
+</head>
+<body>
+<!--#include virtual="inc/head.inc" -->
+<div class="title q">
+    <a href="index.html" ontouchend="PTTSendClick('btn','back','返回首页');" class="back fl spr">返回首页</a>
+    <h4 class="tit fr">兵种介绍</h4>
+</div>
+<ul class="raiders_nav">
+    <li class="active"><a href="###" ontouchend="PTTSendClick('btn','bubing','步兵');">步 兵</a></li>
+    <li><a href="###" ontouchend="PTTSendClick('btn','gongbing','弓兵');">弓 兵</a></li>
+    <li><a href="###" ontouchend="PTTSendClick('btn','qibing','骑兵');">骑 兵</a></li>
+    <li class="last"><a href="###" ontouchend="PTTSendClick('btn','chebing','车兵');">车 兵</a></li>
+</ul>
+<div class='soliders'>
+    <ul class="arm">
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>轻甲步兵</span>
+            <strong>1</strong>
+            <a href="general-list.html" ontouchend="PTTSendClick('btn','qita','其他1');"></a>
+        </li>
+        <li class="even">
+            <strong>2</strong>
+            <span>铁甲卫</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他2');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>3</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他3');"></a>
+        </li>
+        <li class="even">
+            <strong>4</strong>
+            <span>轻甲步兵</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他4');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>5</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他5');"></a>
+        </li>
+    </ul>
+    <!--<ul class="arm">
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>轻甲步兵</span>
+            <strong>2</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他6');"></a>
+        </li>
+        &lt;!&ndash;<li class="even">
+            <strong>2</strong>
+            <span>铁甲卫</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他7');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>3</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他8');"></a>
+        </li>
+        <li class="even">
+            <strong>4</strong>
+            <span>轻甲步兵</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他9');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>5</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他10');"></a>
+        </li>&ndash;&gt;
+    </ul>
+    <ul class="arm">
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>轻甲步兵</span>
+            <strong>4</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他11');"></a>
+        </li>
+        <li class="even">
+            <strong>2</strong>
+            <span>铁甲卫</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他12');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>3</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他13');"></a>
+        </li>
+        <li class="even">
+            <strong>4</strong>
+            <span>轻甲步兵</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他14');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>5</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他15');"></a>
+        </li>
+    </ul>
+    <ul class="arm">
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>轻甲步兵</span>
+            <strong>5</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他16');"></a>
+        </li>
+        <li class="even">
+            <strong>2</strong>
+            <span>铁甲卫</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他17');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>3</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他18');"></a>
+        </li>
+        <li class="even">
+            <strong>4</strong>
+            <span>轻甲步兵</span>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他19');"></a>
+        </li>
+        <li>
+            <img src="ossweb-img/general.png" width="260" height="170" alt="">
+            <span>剑盾士</span>
+            <strong>5</strong>
+            <a href="javascript:;" ontouchend="PTTSendClick('btn','qita','其他20');"></a>
+        </li>
+    </ul>-->
+</div>
+<footer>
+    <p>腾讯公司保留在法律规定范围内对上述规则进行解释的权利</p>
+</footer>
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType:"m201802", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "arm-list", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "兵种列表", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+    TGMobileShare({
+        shareTitle: '这三国 你从未见过-真龙霸业官方网站-腾讯游戏', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'《真龙霸业》手游12月12日全平台预约火热开启，平乱世，争天下，想体验不一样的三国么，《真龙霸业》等你来战！', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/3new/cp/a20171130yuyuem/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'m201802' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+    // tab栏切换
+    /*$(".raiders_nav li").on("touchstart",function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".soliders ul").eq(index).show().siblings().hide();
+    })*/
+</script>
+<script>
+
+    (function(){
+// 兵种数据对接
+        var data_arr=[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
+        var arr = ["","even","","even",""]
+        var render = function(num){
+            var _li = "";
+            for(var i = 0, len = data_arr[num][0].length;i < len;i++){
+                _li += '<li class="'+arr[i]+'">\n' +
+                    '            <img src="'+data_arr[num][2][i]+'" width="260" height="170" alt="">\n' +
+                    '            <span>'+data_arr[num][1][i]+'</span>\n' +
+                    '            <strong>'+(i+1)+'</strong>\n' +
+                    '            <a href="arm-details.html?id='+data_arr[num][0][i]+'" ontouchend="PTTSendClick(\'btn\',\'qita\',\'其他6\');"></a>\n' +
+                    '        </li>'
+            }
+            $ul = $('<ul class="arm">\n' + _li +
+                '                        </ul>')
+            $(".soliders").html($ul);
+        }
+        var bz_data = {}
+        $.ajax({
+            type: "get",
+            url: "//3.qq.com/zlkdatasys/data_zlk_bzlby.json?"+Math.random(),
+            async:true,
+            dataType: "jsonp",
+            jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+            jsonpCallback:"callback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+            success: function(data){
+                bz_data = data.bzlb_ba;
+                console.log(bz_data)
+                var ele_arr=[[],[],[],[]],
+                    //arr[0]: 步兵
+                    //arr[0]: 骑兵
+                    //arr[0]: 弓兵
+                    //arr[0]: 车兵
+                    category = "",
+                    type = "",
+                    pic_url = "",
+                    str = "",
+                    num = 0;
+                for(var i = 0,len = bz_data.length;i < len;i++){
+                    category = bz_data[i]["bzlx_ac"];
+                    type = bz_data[i]["bzmc_66"];
+                    num = bz_data[i]["bzid_7f"];
+                    pic_url = bz_data[i]["bztx_3d"];
+                    if(category == "步兵"){
+                        data_arr[0][0].push(num)
+                        data_arr[0][1].push(type)
+                        data_arr[0][2].push(pic_url)
+                    }else if(category == "骑兵"){
+                        data_arr[1][0].push(num)
+                        data_arr[1][1].push(type)
+                        data_arr[1][2].push(pic_url)
+                    }else if(category == "弓兵"){
+                        data_arr[2][0].push(num)
+                        data_arr[2][1].push(type)
+                        data_arr[2][2].push(pic_url)
+                    }else{
+                        data_arr[3][0].push(num)
+                        data_arr[3][1].push(type)
+                        data_arr[3][2].push(pic_url)
+                    }
+                }
+                render(0);
+                console.log(data_arr)
+            }
+        });
+
+        // tab栏切换
+        $(".raiders_nav li").on("click",function () {
+            var index = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            render(index);
+        });
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="inc/meta.inc" -->
+    <title>这三国你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/swiper-3.4.2.min.css">
+    <!-- 设计：微聚cp  | 重构：微聚cp | 创建：2018/02/11 -->
+    <style>
+        body{background-color: #fff;}
+        .title{ width: 95%;font-size:.36rem;text-align: center;margin:1.5rem auto 0;}
+        .tit{margin-right:2.8rem;font-weight: bold;}
+        .tit em{color:#c4a85b;font-weight: bold;}
+        .titl{font-size: .36rem;color: #c4a85b;font-weight: bold;width: 100%;height: .89rem;box-sizing: border-box;border: .02rem solid #d5d7dc;text-align: center;line-height: .89rem;margin-bottom: .5rem;}
+        .back{display: inline-block;width:1.35rem;height:.25rem;font-size: .22rem;color: #000000; background-position:-6rem -1.4rem; margin-top: .1rem;text-align: center;}
+        .wrap{width: 95%;margin: 0 auto;}
+        .wj{font-size: .36rem;color: #2c324a;font-weight: bold;margin: .3rem 0;}
+        .lef{width: 2.8rem;height: 1.58rem;}
+        .rig{width: 4.15rem;height: 1.58rem;}
+        .video_list li{display: inline-block;width:100%;height: 1.9rem;position: relative;border-bottom: 1px dotted #a0a0a0;margin-bottom: .3rem;}
+        .video_list li:last-child{border-bottom: none;}
+        .video_list li a{position: absolute;width: 2.8rem;height:1.58rem;left: 0;top:0;}
+        .video_list li img{width:2.8rem;height:1.58rem;}
+        .abs{font-size: .2rem;color: #999999;margin-top: .05rem;}
+        .abs i{display: inline-block;width: .2rem;height: .2rem;background-position:-2.98rem -2.78rem;margin-right: .05rem;position: relative;top: 0.04rem;}
+        .abs span{margin-right: .1rem;}
+        .video_list h5{font-size: .24rem;color: #000;width: 100%;overflow: hidden;white-space: nowrap;margin-bottom: .1rem;}
+        .video_list .txt{font-size: .24rem;color: #666666;width: 100%;display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 2;  overflow: hidden;line-height: 1.8;}
+        .more{display: block;font-size: .24rem;color: #242424;text-align: center;margin-bottom: .3rem;}
+        .row{position: relative;margin-top: .5rem;}
+        .row a:last-child{position: absolute;top: -.3rem;right: 0;width: .8rem;height: .8rem;background:url(ossweb-img/top.jpg) no-repeat 50%/.8rem .8rem;text-indent: -9999rem;}
+        .wrap .yelo{width: .06rem;height: .31rem;background: #c4a85b;display: inline-block;margin-right: .2rem;position: relative;top: .03rem;}
+        .wuj{width: 7.5rem;height: 9.42rem;background:url(ossweb-img/arm-bg.jpg) no-repeat 50%/7.5rem 9.42rem;position: relative;margin-top: .5rem;padding-top: 0.01rem;}
+        .wuj .sha{width: 4.82rem;height: 4.68rem;position: absolute;top: .8rem;left: .4rem;}
+        .arm{width: .56rem;height: 1.41rem;background: url(ossweb-img/e-shadow.png) no-repeat 50%/.56rem 1.41rem;font-size: .32rem;color: #fff;text-align: center; display: block;position: absolute;top: .95rem;left: .5rem;}
+        .arm img{width: .95rem;height: .95rem;font-size: .32rem;color: #fff;position: relative;left: -.21rem;top: -.55rem;}
+        .arm>em{display: block; margin-top: -.6rem;font-weight: bold;line-height: 1.2;}
+        .rap{width: 85%;margin: 6.1rem auto 0;}
+        .rap p{width: 100%;font-size:.24rem;color: #adaeb6;}
+        .skills{width: 100%;padding-top: .2rem;}
+        .skills li{margin-bottom: .15rem;display: inline-block;float: left;margin-right: .2rem;}
+        .skills span{display: inline-block;font-size:.24rem;color:#fffefe;margin: .04rem .04rem 0 0;}
+        .plan{display: inline-block;width: 1.7rem;height: .18rem;background: rgba(139, 149, 186,.2);position: relative;margin-top: .13rem;}
+        .plan-bar{position: absolute;width: 25%;height:100%;top: 0;left: 0;background:#8b95ba;}
+        .skills em{display: inline-block;font-size:.24rem;color:#c4a85b;margin: .04rem .15rem 0 0;    width: .44rem;}
+        .tab{width: 100%;text-align: center;border: 0.02rem solid #d5d7dc;}
+        .tab li{ display: inline-block;margin: 0 .5rem;position: relative;}
+        .tab img{width: .74rem;height: .74rem;}
+        .dtalis{width: 95%;margin: .5rem auto 0;}
+        .soliders{padding-top: 0.01rem; width: 100%;height: 2.25rem; border: 0.02rem solid #d5d7dc;border-top: none;margin-bottom: .5rem;}
+        .dtalis h5{font-size: .24rem;color: #666;font-weight: bold;}
+        .dtalis p{font-size: .24rem;color: #666;line-height: 2;margin-bottom: .3rem;}
+        .dtalis{display: none;}
+        .dtalis:first-child{display: block;}
+        .tab li.active:after{ display: block;content: "";width: .98rem;height: .18rem;background:url(ossweb-img/bot.png) no-repeat 50%/.98rem .18rem;position: absolute;bottom: -.16rem; left: -.12rem;}
+        .relation{width: 100%;height:3.94rem;border: 0.02rem solid #d5d7dc;border-top: none;}
+        .bz{width: 100%;height:.87rem;}
+        .bz li{float: left; box-sizing: border-box;width: 50%;text-align: center;line-height:.87rem;font-size: .28rem;color: #434a68;border: 0.01rem solid #d5d7dc;border-top: .1rem solid #d5d7dc;}
+        .bz li.on{color: #2c324a;border: none; border-top: .1rem solid #434a68;font-weight: bold;}
+        .tb{width: 90%;height: 1.1rem;margin: .35rem auto;text-align: center;}
+        .tb li{display: inline-block;margin: 0 .3rem; width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 0.02rem solid #d5d7dc;}
+        .tb li img{display: block; width: .7rem;height: .7rem;margin: .18rem auto;display: block;}
+        .tb li.on img{width: .94rem;height: .94rem;margin: .1rem auto;border-radius: 50%;display: block;}
+        .txt{width: 80%;margin: 0 auto;}
+        .txt i{display: inline-block;width:.24rem;height: .48rem;background:url(ossweb-img/jt.png) no-repeat 50%/.24rem .48rem;margin: .15rem .2rem 0 0;}
+        .txt p{font-size: .24rem;color:#666666;width: 4.87rem;line-height: 1.8;}
+    </style>
+</head>
+<body>
+<!--#include virtual="inc/head.inc" -->
+<div class="title q">
+    <a href="arm-list.html" ontouchend="PTTSendClick('btn','back','返回');" class="back fl spr">返回</a>
+    <h4 class="tit fr"><em>步兵</em>详解</h4>
+</div>
+<div class="wuj">
+    <img id="img_src" src="ossweb-img/shibin.png" class="sha" width="482" height="468" alt="">
+    <span class="arm"><img src="ossweb-img/errow.png" width="95" height="95" alt=""><em>铁甲卫</em></span>
+    <div class="rap">
+        <p>字玄德，三国时期蜀汉开国皇帝。主动技和怒气技，都可对前排近战部队产生极大的防护作用字玄德，三国时期蜀汉开国皇帝。主动技和怒气技，都可对前排近战部队产生极大的防护作用字玄德</p>
+        <ul class="skills">
+            <li class="q">
+                <span class="fl">武  力</span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+            <li class="q">
+                <span class="fl">防  御</span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+            <li class="q">
+                <span class="fl">血  量 </span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+            <li class="q">
+                <span class="fl">负  重</span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+            <li class="q">
+                <span class="fl">速  度 </span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+            <li class="q">
+                <span class="fl">粮  耗</span>
+                <em class="fl">(18)</em>
+                <div class="plan fl">
+                    <div class="plan-bar fl"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrap">
+    <h5 class="wj"><i class="yelo"></i>兵种关系</h5>
+    <div class="relation">
+        <ul class="bz">
+            <li class="on">克制兵种</li>
+            <li>被克兵种</li>
+        </ul>
+        <ul class="tb">
+            <li class="on"><img src="ossweb-img/ty.png" width="94" height="94" alt=""></li>
+            <!--<li><img src="ossweb-img/bz.png" width="70" height="70" alt=""></li>-->
+            <!--<li><img src="ossweb-img/bz.png" width="70" height="70" alt=""></li>-->
+        </ul>
+        <div class="txt q">
+            <i class="fl"></i>
+            <p class="fl">兰陵王的隐身和秒杀能力很容易接近成吉
+                思汗将其秒杀接近成吉思汗将其秒杀</p>
+        </div>
+    </div>
+    <h5 class="wj"><i class="yelo"></i>兵种技能</h5>
+    <ul class="tab">
+        <li  class="active"><img src="ossweb-img/img21.png" width=67 height=67 alt=""></li>
+        <li><img src="ossweb-img/img21.png" width=67 height=67 alt=""></li>
+        <li><img src="ossweb-img/img21.png" width=67 height=67 alt=""></li>
+    </ul>
+    <div class="soliders">
+        <ul class="dtalis">
+            <li>
+                <h5 class="titles">技能介绍1</h5>
+                <p class="descs">技能描述技能描述技能描述技能描述技能描述技能描述技能
+                    描述技能描述技能描述技能描述技能描述。</p>
+            </li>
+        </ul>
+        <!--<ul class="dtalis">
+            <li>
+                <h5>技能介绍2</h5>
+                <p>技能描述技能描述技能描述技能描述技能描述技能描述技能
+                    描述技能描述技能描述技能描述技能描述。</p>
+            </li>
+        </ul>
+        <ul class="dtalis">
+            <li>
+                <h5>技能介绍3</h5>
+                <p>技能描述技能描述技能描述技能描述技能描述技能描述技能
+                    描述技能描述技能描述技能描述技能描述。</p>
+            </li>
+        </ul>-->
+    </div>
+    <h4 class="titl">相关攻略</h4>
+    <ul class="video_list">
+        <li class="q">
+            <div class="lef fl">
+                <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放1');"></a>
+                <img src="ossweb-img/cover.jpg" width="280" height="158" alt="">
+            </div>
+            <div class="rig fr">
+                <h5>标题新手攻略</h5>
+                <p class="txt">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容..</p>
+                <p class="abs"><i class="spr"></i><strong>22万</strong><span class="fr">02-07</span></p>
+            </div>
+        </li>
+        <li class="q">
+            <div class="lef fl">
+                <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放2');"></a>
+                <img src="ossweb-img/cover.jpg" width="280" height="158" alt="">
+            </div>
+            <div class="rig fr">
+                <h5>标题新手攻略</h5>
+                <p class="txt">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容..</p>
+                <p class="abs"><i class="spr"></i><strong>22万</strong><span class="fr">02-07</span></p>
+            </div>
+        </li>
+        <li class="q">
+            <div class="lef fl">
+                <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放3');"></a>
+                <img src="ossweb-img/cover.jpg" width="280" height="158" alt="">
+            </div>
+            <div class="rig fr">
+                <h5>标题新手攻略</h5>
+                <p class="txt">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容..</p>
+                <p class="abs"><i class="spr"></i><strong>22万</strong><span class="fr">02-07</span></p>
+            </div>
+        </li>
+    </ul>
+    <div class="row">
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','more','查看更多');" class="more">查看更多＋</a>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','backtop','返回顶部');" id="to-top">返回顶部</a>
+    </div>
+</div>
+<footer>
+    <p>腾讯公司保留在法律规定范围内对上述规则进行解释的权利</p>
+</footer>
+
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType:"m201802", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "arm-details", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "兵种列表-详情", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+    TGMobileShare({
+        shareTitle: '这三国 你从未见过-真龙霸业官方网站-腾讯游戏', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'《真龙霸业》手游12月12日全平台预约火热开启，平乱世，争天下，想体验不一样的三国么，《真龙霸业》等你来战！', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/3new/cp/a20171130yuyuem/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'m201802' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+    //    返回顶部
+
+    (function(){
+        //return
+        var $return = $("#to-top");
+        $return.on("click",function () {
+            $(window).scrollTo({toT:0});
+        })
+        $.fn.scrollTo =function(options){
+            var defaults = {
+                toT : 0,    //滚动目标位置
+                durTime : 300,  //过渡动画时间
+                delay : 30,     //定时器时间
+                callback:null   //回调函数
+            };
+            var opts = $.extend(defaults,options),
+                timer = null,
+                _this = this,
+                curTop = _this.scrollTop(),//滚动条当前的位置
+                subTop = opts.toT - curTop,    //滚动条目标位置和当前位置的差值
+                index = 0,
+                dur = Math.round(opts.durTime / opts.delay),
+                smoothScroll = function(t){
+                    index++;
+                    var per = Math.round(subTop/dur);
+                    if(index >= dur){
+                        _this.scrollTop(t);
+                        window.clearInterval(timer);
+                        if(opts.callback && typeof opts.callback == 'function'){
+                            opts.callback();
+                        }
+                        return;
+                    }else{
+                        _this.scrollTop(curTop + index*per);
+                    }
+                };
+            timer = window.setInterval(function(){
+                smoothScroll(opts.toT);
+            }, opts.delay);
+            return _this;
+        };
+    })();
+    // tab栏切换
+    $(".tab li").on("touchstart",function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".soliders ul").eq(index).show().siblings().hide();
+    })
+</script>
+<script>
+    function getUrlParam(url,parm) {
+        var reg = new RegExp("(^|&)" + parm + "=([^&]*)(&|$)");
+        var r = url.substr(url.indexOf("\?") + 1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    var detailID = getUrlParam(location.href,"id");
+    console.log(detailID)
+
+
+    var data_arr=[[[],[]],[[],[]],[[],[]],[[],[]]];
+    $.ajax({
+        type: "get",
+        url: "//3.qq.com/zlkdatasys/bzdata/"+detailID+".json?"+Math.random(),
+        async:true,
+        dataType: "jsonp",
+        jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+        success: function(data){
+            console.log(data)
+            var title = data["bzmc_66"],
+                des = data["bzjs_af"],
+                skill = data["bzjn_df"],
+                attack = data["bznlz_9d"][0]["bzgj_a4"],
+                defense = data["bznlz_9d"][0]["bzfyz_bf"],
+                blood = data["bznlz_9d"][0]["bzxlz_a6"],
+                load = data["bznlz_9d"][0]["bzfzz_85"],
+                speed = data["bznlz_9d"][0]["bzsdz_2a"],
+                consume = data["bznlz_9d"][0]["bzlhz_a8"],
+                hold = data["bzgx_96"][0]["bzbksj_d0"],
+                holdback= data["bzgx_96"][0]["bzkzsj_fe"],
+                rel_arr = [[[],[]],[[],[]]],
+                skill_arr = [[[],[],[]],[[],[],[]]],
+                img_src = data["bzpf_c8"][0]["bztp_02"],
+                types = "";
+            rel_arr[0][0].push(hold[0]["bzbkicon_0b"])
+            rel_arr[0][1].push(hold[0]["bzbkwb_6a"])
+            rel_arr[1][0].push(holdback[0]["bzkzicon_55"])
+            rel_arr[1][1].push(holdback[0]["bzkzwb_9c"])
+
+            var types_arr=["ossweb-img/t_ui_icon_bubing.png","ossweb-img/t_ui_icon_qibing.png","ossweb-img/t_ui_icon_gongbing.png","ossweb-img/t_ui_icon_chebing.png"];
+            if(data["bzmc_66"] == "步将"){
+                types = types_arr[0]
+            }else if(data["bzmc_66"] == "骑将"){
+                types = types_arr[1]
+            }else if(data["bzmc_66"] == "攻将"){
+                types = types_arr[2]
+            }else{
+                types = types_arr[3]
+            }
+//alert(types)
+            $(".arm img").attr("src", types);
+            $("#pic_box img").attr("src", rel_arr[0][0]);
+            $("#note").text(rel_arr[0][1]);
+            $(".bz li").on("click",function(){
+                var index = $(this).index();
+                $(this).addClass("on").siblings().removeClass("on");
+                $(".tb img").attr("src", rel_arr[index][0]);
+                $(".txt p").text(rel_arr[index][1]);
+            })
+            for(var i = 0,len = skill_arr.length;i < len;i++){
+                skill_arr[i][0].push(skill[i]["bzjnicon_01"]);
+                skill_arr[i][1].push(skill[i]["bzjnbt_e8"]);
+                skill_arr[i][2].push(skill[i]["bzjnms_05"]);
+            }
+
+            var str = "";
+            for(var j = 0,len = skill_arr.length;j < len;j++){
+                str += '<li class="on"><img src="'+skill_arr[j][0]+'" width="94" height="94" alt=""></li>'
+                console.log(skill_arr[j][0])
+            }
+            var $ul = $(str);
+            $(".tab").html($ul);
+            $(".titles").html(skill_arr[0][1]);
+            $(".descs").html(skill_arr[0][2]);
+            $(".tab").find("li").eq(0).addClass("active").siblings().removeClass("active");
+            $(".tab").on("click","li",function(){
+                var index = $(this).index();
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".titles").html(skill_arr[index][1]);
+                $(".descs").html(skill_arr[index][2]);
+            })
+            // console.log(skill_arr)
+            $(".arm em").text(title);
+            $(".rap p").text(des);
+            $("#img_src").attr("src", img_src);
+            $(".skills li em").eq(0).text("("+attack+")");
+            $(".skills li em").eq(1).text("("+defense+")");
+            $(".skills li em").eq(2).text("("+blood+")");
+            $(".skills li em").eq(3).text("("+load+")");
+            $(".skills li em").eq(4).text("("+speed+")");
+            $(".skills li em").eq(5).text("("+consume+")");
+            $(".plan-bar").eq(0).css({"width":attack*1.7/100+"rem"});
+            $(".plan-bar").eq(1).css({"width":defense*1.7/100+"rem"});
+            $(".plan-bar").eq(2).css({"width":blood*1.7/250+"rem"});
+            $(".plan-bar").eq(3).css({"width":load*1.7/100+"rem"});
+            $(".plan-bar").eq(4).css({"width":speed*1.7/1000+"rem"});
+            $(".plan-bar").eq(5).css({"width":consume*1.7/5+"rem"});
+        }
+    });
+
+</script>
+</body>
+</html>

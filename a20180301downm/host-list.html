@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="inc/meta.inc" -->
+    <title>这三国你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="ossweb-img/swiper-3.4.2.min.css">
+    <!-- 设计：微聚cp  | 重构：微聚cp | 创建：2018/02/11 -->
+    <style>
+        body{background-color: #fff;}
+        .top-bg{width: 100%;height: 4.76rem;background: url(ossweb-img/host-bg.jpg) no-repeat 50%/7.5rem 4.76rem;margin-top: .99rem;}
+        .title{ width: 100%;font-size:.36rem;text-align: center;margin-top: 1rem;margin:.2rem 0;}
+        .tit{margin-right:2.8rem;font-weight: bold;}
+        .tit em{color:#f8997a;font-weight: bold;}
+        .back{display: inline-block;width:1.35rem;height:.25rem;font-size: .22rem;color: #000000; background-position:-6rem -1.4rem; margin: .1rem 0 0 .5rem;text-align: right;}
+        .video_list{width: 7.12rem;margin: 0 auto;}
+        .video_list li{display: inline-block;width:3.39rem;height:auto;position: relative;margin-bottom: .5rem;}
+        .video_list li a{position: absolute;width:100%;height:1.95rem;left:0;top:0;z-index: 100;}
+        .video_list li img{width:3.4rem;height:1.95rem;}
+        .video_list li .t-left{position: absolute;z-index: 99;width: 1.23rem;height: .4rem;background-position: -6rem -2.01rem; left: 0;top: 0;text-align: center;line-height: .4rem;font-size: .24rem;color: #fff;font-weight: normal;}
+        .video_list .row{width: 100%;height: .28rem;    margin-top: -.2rem;}
+        .video_list h5{font-size: .24rem;color: #000;width: 2.3rem;overflow: hidden;white-space: nowrap;}
+        .video_list span{font-size: .2rem;color: #999999;    margin-top: .05rem;}
+        .abs{position: absolute;left: 0;top:1.5rem;width: 100%;height: .45rem;background: rgba(0,0,0,.7);font-size: .2rem;color: #999999;line-height: .45rem;}
+        .abs i{display: inline-block;width: .2rem;height: .2rem; background-position:-2.98rem -2.78rem;margin:0 .05rem 0 .1rem;position: relative;top: 0.04rem;}
+        .more{display: block;font-size: .24rem;color: #242424;text-align: center;margin: .3rem 0;}
+        .more-host{width: 100%;text-align: center;font-size:.36rem;color: #f8997a;font-weight: bold;margin: .35rem 0;}
+        .wrap{width: 7.5rem;height: 8.87rem;background:url(ossweb-img/host-bg1.jpg) no-repeat 50%/7.5rem 8.87rem;padding-top: .01rem;}
+        .swiper1{width: 7.18rem;height:4.81rem;background: url(ossweb-img/host-border.png) no-repeat 50%/7.18rem 4.81rem; }
+        .container{margin: .4rem .3rem;position: relative;}
+        .page{width: 100%;text-align: center;height: .1rem;}
+        .page span{position: relative;top:-.6rem;}
+        .page .swiper-pagination-bullet{width: .1rem;height: .1rem;border-radius: 50%;border: .02rem solid #f8997a;opacity: 1;margin: 0 .1rem;background: transparent;}
+        .page .swiper-pagination-bullet-active{background: #f8997a;}
+        .host{width: 3.28rem;height: 4.18rem;border: 0.01rem solid #f8997a;}
+        .btn{position: absolute;width:1.9rem;height:.55rem;font-size: .2rem;color: #fff;text-align: center;line-height: .53rem;background-position:-3.98rem -1.05rem;left: 1.6rem;bottom: .3rem;z-index: 100;}
+        .txt{width: 3.2rem;height: auto;}
+        .txt h5{font-size: .35rem;color: #f8997a;width: 100%;text-align: center;font-weight: bold;}
+        .txt p{font-size: .22rem;margin-bottom: .15rem;width: 100%;}
+        .txt span{color: #f8997a;width: 1.04rem;text-align: left;display:block;margin-right: .2rem;float: left;font-weight: bold;}
+        .txt em{color: #000;display: inline-block;width: 1.96rem;}
+        .box{margin-right: .15rem; display: inline-block;width:.78rem;height:.8rem;background:url(ossweb-img/lov-border.png) no-repeat 50%/.78rem .8rem;font-size: .22rem;color: #2c324a;text-align: center;}
+        .box img{width: .63rem;height: .63rem;margin: .09rem 0;}
+        .boxs{text-align: center; margin: 0 auto; display: block;width: 1.09rem;height: 1.09rem;border-radius: 50%;border: 0.02rem solid #dcdcdf;}
+        .boxs img{width: 1.04rem;height: 1.04rem;border-radius: 50%;border: 0.01rem solid #dcdcdf;}
+        .boxs span{font-size: .22rem;color: #666;}
+        .swiper-button-prev{width: .22rem;height: .44rem;background:url(ossweb-img/host-left.png) no-repeat 50%/.22rem .44rem;top: .7rem;left: 0;}
+        .swiper-button-next{width: .22rem;height: .44rem;background: url(ossweb-img/host-right.png) no-repeat 50%/.22rem .44rem;top: .7rem;right: 0;}
+        .rap{margin: 1rem auto 0;width: 7.18rem;height: 1.78rem;position: relative;}
+        .swiper2{width: 90%;height: 1.78rem;}
+        .swiper2 .swiper-slide{width: 1.09rem!important; height: 1.09rem!important;position: relative;margin-left: .185rem!important;}
+        .boxs span{position: absolute;display: block; bottom: 0;width: 100%;bottom: -.4rem;}
+        .swiper2 .swiper-slide-active{width: 1.26rem!important;height: 1.26rem!important;}
+        .swiper2 .swiper-slide-active .boxs{width: 1.26rem;height: 1.26rem;border-radius: 50%;border: 0.02rem solid #f8997a;}
+        .swiper2 .swiper-slide-active img{    margin: 0.02rem auto; width: 1.2rem;height: 1.2rem;border: 0.01rem solid #f8997a;}
+        .swiper2 .swiper-slide-active span{width:1.65rem;height:.45rem;text-align: center;line-height: .45rem;font-size: .24rem;color: #f8997a;background: url(ossweb-img/btn-border.png) no-repeat 50%/1.65rem .45rem;margin-left: -.2rem;}
+    </style>
+</head>
+<body>
+<!--#include virtual="inc/head.inc" -->
+<div class="top-bg"></div>
+<div class="wrap">
+    <div class="title q">
+        <a href="index.html" ontouchend="PTTSendClick('btn','back','返回首页');" class="back fl spr">返回首页</a>
+        <h4 class="tit fr"><em>主播</em>专区</h4>
+    </div>
+    <div class="swiper-container swiper1" id="swiper-container1">
+        <div class="swiper-wrapper" id="swiper-wrapper1">
+            <!--<div class="swiper-slide">-->
+                <!--<div class="container q">-->
+                    <!--<img src="ossweb-img/host.jpg" width="328" height="418" class="host fl" alt="">-->
+                    <!--<a href="host.html" ontouchend="PTTSendClick('btn','host','进入主播间');" class="btn">进入主播间</a>-->
+                    <!--<div class="txt fr">-->
+                        <!--<h5>大乔1</h5>-->
+                        <!--<p><span>性  格:  </span><em>冷漠，低调</em></p>-->
+                        <!--<p><span>TA的宣言:  </span><em>小小的身躯、大大的-->
+                            <!--梦想、超神全场！</em></p>-->
+                        <!--<p><span>TA的爱好:  </span><em>木瓜 \ 牛奶</em></p>-->
+                        <!--<p><span>口头禅：</span><em>讨厌</em></p>-->
+                        <!--<p>-->
+                            <!--<span>最爱武将:</span>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将1');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将2');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="container q">-->
+                    <!--<img src="ossweb-img/host.jpg" width="328" height="418" class="host fl" alt="">-->
+                    <!--<a href="host.html" ontouchend="PTTSendClick('btn','host','进入主播间');" class="btn">进入主播间</a>-->
+                    <!--<div class="txt fr">-->
+                        <!--<h5>大乔2</h5>-->
+                        <!--<p><span>性  格:  </span><em>冷漠，低调</em></p>-->
+                        <!--<p><span>TA的宣言:  </span><em>小小的身躯、大大的-->
+                            <!--梦想、超神全场！</em></p>-->
+                        <!--<p><span>TA的爱好:  </span><em>木瓜 \ 牛奶</em></p>-->
+                        <!--<p><span>口头禅：</span><em>讨厌</em></p>-->
+                        <!--<p>-->
+                            <!--<span>最爱武将:</span>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将1');"  class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将2');"  class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="container q">-->
+                    <!--<img src="ossweb-img/host.jpg" width="328" height="418" class="host fl" alt="">-->
+                    <!--<a href="host.html" ontouchend="PTTSendClick('btn','host','进入主播间');" class="btn">进入主播间</a>-->
+                    <!--<div class="txt fr">-->
+                        <!--<h5>大乔3</h5>-->
+                        <!--<p><span>性  格:  </span><em>冷漠，低调</em></p>-->
+                        <!--<p><span>TA的宣言:  </span><em>小小的身躯、大大的-->
+                            <!--梦想、超神全场！</em></p>-->
+                        <!--<p><span>TA的爱好:  </span><em>木瓜 \ 牛奶</em></p>-->
+                        <!--<p><span>口头禅：</span><em>讨厌</em></p>-->
+                        <!--<p>-->
+                            <!--<span>最爱武将:</span>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将1');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将2');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="container q">-->
+                    <!--<img src="ossweb-img/host.jpg" width="328" height="418" class="host fl" alt="">-->
+                    <!--<a href="host.html" ontouchend="PTTSendClick('btn','host','进入主播间');" class="btn">进入主播间</a>-->
+                    <!--<div class="txt fr">-->
+                        <!--<h5>大乔4</h5>-->
+                        <!--<p><span>性  格:  </span><em>冷漠，低调</em></p>-->
+                        <!--<p><span>TA的宣言:  </span><em>小小的身躯、大大的-->
+                            <!--梦想、超神全场！</em></p>-->
+                        <!--<p><span>TA的爱好:  </span><em>木瓜 \ 牛奶</em></p>-->
+                        <!--<p><span>口头禅：</span><em>讨厌</em></p>-->
+                        <!--<p>-->
+                            <!--<span>最爱武将:</span>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将1');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将2');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="container q">-->
+                    <!--<img src="ossweb-img/host.jpg" width="328" height="418" class="host fl" alt="">-->
+                    <!--<a href="host.html" ontouchend="PTTSendClick('btn','host','进入主播间');" class="btn">进入主播间</a>-->
+                    <!--<div class="txt fr">-->
+                        <!--<h5>大乔5</h5>-->
+                        <!--<p><span>性  格:  </span><em>冷漠，低调</em></p>-->
+                        <!--<p><span>TA的宣言:  </span><em>小小的身躯、大大的-->
+                            <!--梦想、超神全场！</em></p>-->
+                        <!--<p><span>TA的爱好:  </span><em>木瓜 \ 牛奶</em></p>-->
+                        <!--<p><span>口头禅：</span><em>讨厌</em></p>-->
+                        <!--<p>-->
+                            <!--<span>最爱武将:</span>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将1');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                            <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','wujiang','武将2');" class="box"><img src="ossweb-img/zhubo_1.jpg" width="135" height="135" alt="">董卓</a>-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination page"></div>
+    <div class="rap">
+        <div class="swiper-container swiper2" id="swiper-container2">
+            <div class="swiper-wrapper" id="swiper-wrapper2">
+                <!--<div class="swiper-slide">-->
+                    <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','zhubo','主播1');" class="boxs"><img src="ossweb-img/zhubo_1.jpg" width=135 height=135 alt=""><span>大乔1</span></a>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','zhubo','主播2');" class="boxs"><img src="ossweb-img/zhubo_1.jpg" width=135 height=135 alt=""><span>大乔2</span></a>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','zhubo','主播3');" class="boxs"><img src="ossweb-img/zhubo_1.jpg" width=135 height=135 alt=""><span>大乔3</span></a>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','zhubo','主播4');" class="boxs"><img src="ossweb-img/zhubo_1.jpg" width=135 height=135 alt=""><span>大乔4</span></a>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<a href="javascript:;" ontouchend="PTTSendClick('btn','zhubo','主播5');" class="boxs"><img src="ossweb-img/zhubo_1.jpg" width=135 height=135 alt=""><span>大乔5</span></a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<h4 class="more-host">更多主播间</h4>
+<ul class="video_list">
+    <li>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放1');"></a>
+        <em class="t-left spr">大乔</em>
+        <img src="ossweb-img/cover.jpg" width="340" height="194" alt="">
+        <p class="abs"><i class="spr"></i><strong>22万</strong></p>
+        <div class="row q">
+            <h5 class="fl">标题新手攻略 </h5>
+            <span class="fr">02-17</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放2');"></a>
+        <em class="t-left spr">大乔</em>
+        <img src="ossweb-img/cover.jpg" width="340" height="194" alt="">
+        <p class="abs"><i class="spr"></i><strong>22万</strong></p>
+        <div class="row q">
+            <h5 class="fl">标题新手攻略 </h5>
+            <span class="fr">02-17</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放3');"></a>
+        <em class="t-left spr">大乔</em>
+        <img src="ossweb-img/cover.jpg" width="340" height="194" alt="">
+        <p class="abs"><i class="spr"></i><strong>22万</strong></p>
+        <div class="row q">
+            <h5 class="fl">标题新手攻略 </h5>
+            <span class="fr">02-17</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;" ontouchend="PTTSendClick('btn','bofang','播放4');"></a>
+        <em class="t-left spr">大乔</em>
+        <img src="ossweb-img/cover.jpg" width="340" height="194" alt="">
+        <p class="abs"><i class="spr"></i><strong>22万</strong></p>
+        <div class="row q">
+            <h5 class="fl">标题新手攻略 </h5>
+            <span class="fr">02-17</span>
+        </div>
+    </li>
+</ul>
+<a href="javascript:;" ontouchend="PTTSendClick('btn','more','查看更多');" class="more">查看更多＋</a>
+<footer>
+    <p>腾讯公司保留在法律规定范围内对上述规则进行解释的权利</p>
+</footer>
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType:"m201802", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "host-list", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "主播列表", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+    TGMobileShare({
+        shareTitle: '这三国 你从未见过-真龙霸业官方网站-腾讯游戏', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'《真龙霸业》手游12月12日全平台预约火热开启，平乱世，争天下，想体验不一样的三国么，《真龙霸业》等你来战！', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/3new/cp/a20171130yuyuem/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'m201802' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+
+
+
+
+
+    // 请求数据
+    $.ajax({
+        type: "get",
+        url: "//3.qq.com/zlkdatasys/zhubodata//1.json",
+        dataType: "jsonp",
+        jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+        success: function(json){
+
+            var zbarr = json.zbsj_9d,
+                zb_length = zbarr.length;
+            console.log(zbarr);
+            // 动态插入轮播图
+            for( var i = 0; i < zb_length; i++) {
+                var $li1 = $("<div class='swiper-slide'>\
+                               <a href='javascript:;' class='boxs'>\
+                                    <img src='"+ zbarr[i].zbtxtp_87 +"' alt=''>\
+                                    <span>"+ zbarr[i].zbmc_f2 +"</span>\
+                                </a>\
+                            </div>");
+                $("#swiper-wrapper2").append($li1);
+
+                //
+                var $li = '<div class="swiper-slide">\
+                    <div class="container q">\
+                    <img src="'+ zbarr[i].zbdt_12 +'" width="328" height="418" class="host fl" alt="">\
+                    <a href="host.html?id='+ i +'"  class="btn spr">进入主播间</a>\
+                    <div class="txt fr">\
+                    <h5>'+ zbarr[i].zbmc_f2 +'</h5>\
+                    <p><span>性  格:  </span><em>'+ zbarr[i].zbxg_0d +'</em></p>\
+                <p><span>TA的宣言:  </span> <em>'+ zbarr[i].zbxy_62 +'</em></p>\
+                <p><span>TA的爱好:  </span><em>'+ zbarr[i].zbah_b3 +'</em></p>\
+                <p><span>口头禅：</span><em>'+ zbarr[i].zbkt_8c +'</em></p>\
+                <p> <span>最爱武将:</span> <a href="javascript:;"  class="box"><img src="'+ zbarr[i].zbzawj_d6[0].zbzawjtx_1b +'" width="135" height="135" alt="">'+ zbarr[i].zbzawj_d6[0].zbzawjmc_73 +'</a><a href="javascript:;"  class="box"><img src="'+ zbarr[i].zbzawj_d6[1].zbzawjtx_1b +'" width="135" height="135" alt="">'+ zbarr[i].zbzawj_d6[1].zbzawjmc_73 +'</a></p>\
+                    </div>\
+                    </div>\
+                    </div>'
+                $("#swiper-wrapper1").append($li);
+            }
+
+            var mySwiper1 = new Swiper('.swiper1', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop:true,
+                loopedSlides: 5, //looped slides should be the same
+                observer:true,
+                observeParents:true,
+
+            })
+            var mySwiper2 = new Swiper('.swiper2', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                centeredSlides: true,
+                slidesPerView:5,
+                touchRatio: 0.2,
+                slideToClickedSlide: true,
+                loop:true,
+                loopedSlides: 5, //looped slides should be the same
+                observer:true,
+                observeParents:true,
+                spaceBetween:0,
+
+            })
+            mySwiper1.params.control =mySwiper2;//需要在Swiper2初始化后，Swiper1控制Swiper2
+            mySwiper2.params.control = mySwiper1;//需要在Swiper1初始化后，Swiper2控制Swiper1
+
+        }
+    });
+</script>
+</body>
+</html>
